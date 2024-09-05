@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+
+{% block content %}
+    Категорії:
+    {%for c in category_list%}
+        <div>
+            <a href="/category/{{c[0]}}">{{c[1]}}</a>
+        </div>
+    {%endfor%}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+
+{% block content %}
+    Пости
+    {%for t in post_list%}
+        <div>
+            {{t}}
+            <p></p>
+        </div>
+    {%endfor%}
+{% endblock %}
